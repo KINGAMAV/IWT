@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact World Translation | Agence Linguistique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* On remplace la police par Roboto pour toutes les pages */
+        body { font-family: 'Roboto', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+        /* Style pour l'effet de fade-in des éléments */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="sticky top-0 bg-white shadow-md z-50">
+        
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center">
+                <img src="img/logo.png" alt="Impact World Translation Logo" 
+                     class="h-12 md:h-16 w-auto rounded-lg shadow-md transition duration-300 hover:scale-105"> 
+            </a>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-700 transition duration-300 font-medium">Accueil</a>
+                <a href="services.html" class="text-gray-600 hover:text-indigo-700 transition duration-300 font-medium">Nos Services</a>
+                <a href="#avantages" class="text-gray-600 hover:text-indigo-700 transition duration-300 font-medium">Pourquoi Nous</a>
+                <a href="contact.html" class="px-4 py-2 bg-indigo-700 text-white rounded-lg hover:bg-indigo-800 transition duration-300 font-semibold shadow-md hover:shadow-lg">Demander un Devis</a>
+            </div>
+            
+            <button class="md:hidden text-gray-600 hover:text-indigo-700" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg pb-4">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50">Accueil</a>
+            <a href="services.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50">Nos Services</a>
+            <a href="index.html#avantages" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50">Pourquoi Nous</a>
+            <a href="contact.html" class="block mx-4 mt-2 py-2 text-center bg-indigo-700 text-white rounded-lg hover:bg-indigo-800 transition duration-300 font-semibold">Demander un Devis</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-indigo-700 text-white py-20 md:py-32 animate-fade-in-down">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight transition duration-700 ease-out transform translate-y-0 opacity-100" style="transition-delay: 0.1s;">
+                    Chaque mot a le pouvoir de changer le monde.
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 transition duration-700 ease-out transform translate-y-0 opacity-100" style="transition-delay: 0.3s;">
+                    Transformez vos idées en messages clairs, précis et influents.
+                </p>
+                <a href="contact.html" class="px-8 py-3 bg-white text-indigo-700 font-bold rounded-full text-lg hover:bg-gray-200 transition duration-300 shadow-xl hover:shadow-2xl inline-block transition duration-700 ease-out transform translate-y-0 opacity-100" style="transition-delay: 0.5s;">
+                    Demander un Devis Maintenant
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 fade-in">
+            L'Expertise au Cœur de la Traduction
+        </h2>
+        
+        <div class="flex flex-col md:flex-row items-center gap-10">
+            
+            <div class="md:w-1/3 flex-shrink-0 fade-in" style="transition-delay: 0.2s;">
+                <img src="img/expert-traduction.jpg" alt="Matthieu Kouassi, Expert en Traduction-Interprétation" 
+                     class="w-full h-80 object-cover rounded-xl shadow-2xl border-4 border-indigo-600 transition duration-500 hover:scale-[1.02]">
+            </div>
+
+            <div class="md:w-2/3 space-y-4 fade-in" style="transition-delay: 0.4s;">
+                <p class="text-lg text-gray-700 mb-6 border-l-4 border-indigo-500 pl-4 transition duration-300">
+                    Impact World Translation est une agence linguistique et de communication internationale basée à Abidjan, Côte d’Ivoire, dirigée par **Matthieu Kouassi**, expert reconnu en traduction-interprétation et gestion de projets linguistiques.
+                </p>
+                
+                <p class="text-xl font-semibold text-indigo-700 mb-4 transition duration-300">
+                    Notre mission : Transformer vos idées en messages clairs, précis et influents.
+                </p>
+
+                <p class="text-gray-600 mb-4 transition duration-300">
+                    Nous disposons d’un réseau mondial d’experts linguistiques de rang international, capables d’intervenir dans toutes les langues majeures à la demande du client, quels que soient le secteur et la localisation du projet.
+                </p>
+
+                <a href="contact.html" class="inline-flex items-center mt-4 px-6 py-2 border border-transparent text-base font-medium rounded-md shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.02]">
+                    Contacter Matthieu Kouassi
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 text-indigo-700 fade-in">Nos Solutions Linguistiques Complètes</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 fade-in" style="transition-delay: 0.1s;">
+                <img src="img/traduction-officielle.jpg" alt="Interprétation professionnelle" class="w-full h-48 object-cover transition duration-300 group-hover:opacity-90">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Interprétation Professionnelle</h3>
+                    <p class="text-gray-600">Simultanée, consécutive, de liaison. Garantissez une communication parfaite lors de vos événements internationaux.</p>
+                    <a href="contact.html" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">Demander un Devis &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 fade-in" style="transition-delay: 0.2s;">
+                <img src="img/coaching-linguistique.jpg" alt="Traduction professionnelle et certifiée" class="w-full h-48 object-cover transition duration-300 group-hover:opacity-90">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Traduction Professionnelle</h3>
+                    <p class="text-gray-600">Traduction simple, certifiée et assermentée pour tous vos documents légaux, techniques et institutionnels.</p>
+                    <a href="contact.html" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">Demander un Devis &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 fade-in" style="transition-delay: 0.3s;">
+                <img src="img/formation-linguistique.jpg" alt="Formations linguistiques individuelles et en entreprise" class="w-full h-48 object-cover transition duration-300 group-hover:opacity-90">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Formations Linguistiques</h3>
+                    <p class="text-gray-600">Développez vos compétences linguistiques avec nos formations sur mesure, individuelles ou en entreprise.</p>
+                    <a href="contact.html" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">En savoir plus &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 fade-in" style="transition-delay: 0.4s;">
+                <img src="img/conference-bilingue.jpg" alt="Coaching en leadership et expression orale" class="w-full h-48 object-cover transition duration-300 group-hover:opacity-90">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Coaching et Accompagnement</h3>
+                    <p class="text-gray-600">Développez votre leadership, votre expression orale et découvrez votre Ikigai avec nos experts.</p>
+                    <a href="contact.html" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">En savoir plus &rarr;</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 fade-in" style="transition-delay: 0.5s;">
+                <img src="img/reseau-global.jpg" alt="Conférences et animation bilingue" class="w-full h-48 object-cover transition duration-300 group-hover:opacity-90">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Conférences & Animation Bilingue FR/EN</h3>
+                    <p class="text-gray-600">Animez vos événements avec des professionnels bilingues, garantissant un impact maximal.</p>
+                    <a href="contact.html" class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">Demander un Devis &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="bg-indigo-700 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-[1.02] flex flex-col justify-center items-center p-6 text-white fade-in lg:col-span-1 md:col-span-2" style="transition-delay: 0.6s;">
+                 <h3 class="text-2xl font-bold mb-3">Prêt à transformer vos mots ?</h3>
+                 <a href="contact.html" class="px-6 py-3 bg-white text-indigo-700 font-bold rounded-full text-md hover:bg-gray-200 transition duration-300 shadow-md">
+                    Contactez-nous
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+        
+        <section id="avantages" class="bg-indigo-50 py-16 md:py-24">
+<div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 fade-in">Pourquoi Choisir Impact World Translation ?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5 fade-in" style="transition-delay: 0.1s;">
+            <div class="flex-shrink-0">
+                <span class="text-indigo-600 text-3xl transition duration-300 group-hover:scale-110">🌐</span> 
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Excellence Linguistique et Culturelle</h3>
+                <p class="text-gray-600">Une précision irréprochable et une sensibilité culturelle dans chaque langue grâce à notre réseau mondial d'experts.</p>
+            </div>
+        </div>
+
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5 fade-in" style="transition-delay: 0.2s;">
+            <div class="flex-shrink-0">
+                <span class="text-indigo-600 text-3xl transition duration-300 group-hover:scale-110">⚡</span> 
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Réactivité Internationale</h3>
+                <p class="text-gray-600">Des équipes dans plusieurs fuseaux horaires pour garantir une prise en charge et une réponse rapide à l'échelle mondiale.</p>
+            </div>
+        </div>
+
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5 fade-in" style="transition-delay: 0.3s;">
+            <div class="flex-shrink-0">
+                <span class="text-indigo-600 text-3xl transition duration-300 group-hover:scale-110">🎯</span> 
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Expertise Sectorielle Pointue</h3>
+                <p class="text-gray-600">Maîtrise des domaines clés : juridique, technique, institutionnel, diplomatique, médical, et autres.</p>
+            </div>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-1 bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5 fade-in" style="transition-delay: 0.4s;">
+            <div class="flex-shrink-0">
+                <span class="text-indigo-600 text-3xl transition duration-300 group-hover:scale-110">💼</span> 
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Qualité Constante</h3>
+                <p class="text-gray-600">Conformité totale aux standards internationaux les plus stricts de traduction et d’interprétation.</p>
+            </div>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-2 bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4 hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5 fade-in" style="transition-delay: 0.5s;">
+            <div class="flex-shrink-0">
+                <span class="text-indigo-600 text-3xl transition duration-300 group-hover:scale-110">🤝</span> 
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Service Client Personnalisé</h3>
+                <p class="text-gray-600">Un suivi dédié, des réponses rapides et une adaptation totale à vos besoins spécifiques. Votre satisfaction est notre priorité.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 Impact World Translation. Tous droits réservés.</p>
+            <div class="mt-4">
+                <a href="mailto:contact@impact.ci" class="text-indigo-400 hover:text-indigo-200 transition duration-300">contact@impact.ci</a> | Suivez-nous sur [Icône Réseau Social]
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // 1. Récupérer les deux éléments HTML
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    // 2. Écouter le clic sur le bouton
+    button.addEventListener('click', () => {
+        // 3. Basculer la classe 'hidden' (cache/montre le menu)
+        menu.classList.toggle('hidden');
+    });
+
+    // Code pour l'animation de défilement (Scroll Reveal)
+    document.addEventListener('DOMContentLoaded', () => {
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    });
+</script>
+    
+</body>
+</html>

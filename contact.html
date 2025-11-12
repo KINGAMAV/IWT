@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demander un Devis | Impact World Translation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-700"><img src="img/logo.png" alt="Impact World Translation Logo" class="h-12 md:h-16 w-auto rounded-lg shadow-md transition duration-300 hover:scale-105 "></a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-700 transition duration-300">Accueil</a>
+                <a href="index.html#services" class="text-gray-600 hover:text-indigo-700 transition duration-300">Nos Services</a>
+                <a href="index.html#avantages" class="text-gray-600 hover:text-indigo-700 transition duration-300">Pourquoi Nous</a>
+                <a href="contact.html" class="px-4 py-2 bg-indigo-700 text-white rounded-lg hover:bg-indigo-800 transition duration-300 font-semibold">Demander un Devis</a>
+            </div>
+            </nav>
+    </header>
+
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        
+        <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-indigo-800 mb-4">
+                Devis & Contact
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">
+                Décrivez votre projet. Notre équipe vous recontactera sous 24h avec une proposition détaillée.
+            </p>
+
+            <form name="devis-contact" method="POST" data-netlify="true" class="space-y-6">
+                
+                <input type="hidden" name="form-name" value="devis-contact" />
+
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nom Complet / Organisation</label>
+                    <input type="text" name="name" id="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Adresse Email</label>
+                    <input type="email" name="email" id="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+
+                <div>
+                    <label for="type" class="block text-sm font-medium text-gray-700">Type de Demande</label>
+                    <select id="type" name="type_de_demande" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-500 focus:border-indigo-500 bg-white">
+                        <option value="">-- Sélectionnez --</option>
+                        <option value="devis_traduction">Demande de Devis - Traduction</option>
+                        <option value="devis_interpretation">Demande de Devis - Interprétation</option>
+                        <option value="formation_coaching">Renseignements Formation / Coaching</option>
+                        <option value="general">Renseignements Généraux</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="languages" class="block text-sm font-medium text-gray-700">Langues de travail (Ex: Français vers Anglais)</label>
+                    <input type="text" name="langues_travail" id="languages" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Ex: De l'Anglais et Espagnol vers le Français">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Détails de votre projet / Message</label>
+                    <textarea id="message" name="details_projet" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                </div>
+                
+                <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 text-sm text-indigo-700">
+                    <p class="font-bold">NOTE IMPORTANTE (Phase 1)</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1">
+                        <li>**Documents :** Veuillez ne pas joindre de fichiers. **Merci d'inclure un lien de partage (Google Drive, Dropbox) dans le champ Détails ci-dessus.**</li>
+                        <li>**Paiement / RDV :** Les paiements et prises de rendez-vous en ligne seront disponibles lors de la Phase 2. Pour l'instant, nous gérons cela directement par email/téléphone.</li>
+                    </ul>
+                </div>
+
+                <div class="pt-4">
+                    <button type="submit" class="w-full py-3 px-6 bg-indigo-700 text-white font-bold rounded-lg shadow-lg hover:bg-indigo-800 transition duration-300 transform hover:scale-105">
+                        Envoyer ma Demande de Devis
+                    </button>
+                </div>
+
+            </form>
+        </div>
+        
+    </main>
+
+        <script>
+    // 1. Récupérer les deux éléments HTML
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    // 2. Écouter le clic sur le bouton
+    button.addEventListener('click', () => {
+        // 3. Basculer la classe 'hidden' (cache/montre le menu)
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+    </body>
+</html>
